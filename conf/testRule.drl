@@ -1,0 +1,8 @@
+import com.i2i_systems.drools.kjar.creator.Message;
+
+rule "Hello World"
+when
+  message:Message (type == 'Hello')
+then
+  message.printMessage();
+end
